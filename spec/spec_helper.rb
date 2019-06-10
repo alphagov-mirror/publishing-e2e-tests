@@ -134,6 +134,7 @@ Capybara.register_driver :headless_chrome do |app|
         --disable-web-security
         --disable-infobars
         --disable-notifications
+        --disable-dev-shm-usage
         --headless
         --no-sandbox
         --window-size=1400,1400
