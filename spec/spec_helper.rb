@@ -137,6 +137,7 @@ Capybara.register_driver :headless_chrome do |app|
         --headless
         --no-sandbox
         --window-size=1400,1400
+        --disable-features=NetworkService
       )
     }
   )
