@@ -54,7 +54,7 @@ services:
       test: "mysql --user=root --password=root -e 'SELECT 1'"
 
   mongo:
-    image: mongo:2.4
+    image: mongo:3.6
     healthcheck:
       << : *default-healthcheck
       test: "echo 'db.stats().ok' | mongo localhost:27017/test --quiet"
